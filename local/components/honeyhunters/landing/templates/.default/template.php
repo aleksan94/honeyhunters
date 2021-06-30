@@ -31,7 +31,7 @@
 			</div>
 
 			<div class="contact-button">
-				<button class="btn">Записать</button>
+				<button class="btn btn-write">Записать</button>
 			</div>
 		</div>
 	</div>
