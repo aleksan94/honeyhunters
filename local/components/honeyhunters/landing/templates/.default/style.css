@@ -125,7 +125,7 @@
 	padding-bottom: 8em;
 }
 
-.comment-card:not(:nth-child(3)) {
+.comment-card:not(:nth-child(3n)) {
 	margin-right: 5%;
 }
 
