@@ -42,51 +42,7 @@
 				<span>Выводим комментарии</span>
 			</div>
 			<div class="comment-cards">
-				<div class="comment-card">
-					<div class="comment-card-title">
-							Вася
-					</div>
-					<div class="comment-card-body">
-						<div class="comment-card-email">vasya@mail.ru</div>
-						<div class="comment-card-text">Сообщение от Василия Пупкина.</div>
-					</div>
-				</div>
-				<div class="comment-card">
-					<div class="comment-card-title">
-							Вася
-					</div>
-					<div class="comment-card-body">
-						<div class="comment-card-email">vasya@mail.ru</div>
-						<div class="comment-card-text">Сообщение от Василия Пупкина.</div>
-					</div>
-				</div>
-				<div class="comment-card">
-					<div class="comment-card-title">
-							Вася
-					</div>
-					<div class="comment-card-body">
-						<div class="comment-card-email">vasya@mail.ru</div>
-						<div class="comment-card-text">Сообщение от Василия Пупкина.</div>
-					</div>
-				</div>
-				<div class="comment-card">
-					<div class="comment-card-title">
-							Вася
-					</div>
-					<div class="comment-card-body">
-						<div class="comment-card-email">vasya@mail.ru</div>
-						<div class="comment-card-text">Сообщение от Василия Пупкина.</div>
-					</div>
-				</div>
-				<div class="comment-card">
-					<div class="comment-card-title">
-							Вася
-					</div>
-					<div class="comment-card-body">
-						<div class="comment-card-email">vasya@mail.ru</div>
-						<div class="comment-card-text">Сообщение от Василия Пупкина.</div>
-					</div>
-				</div>
+				<?=$this->getComponent()->getCommentsHtml()?>
 			</div>
 		</div>
 	</div>

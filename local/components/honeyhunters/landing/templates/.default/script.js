@@ -17,9 +17,12 @@
 
 			writeData(data, function(res) {
 				let isOk = res.status && res.status === 'ok';
-				let message = res.message ? res.message : '';
+				let message = res.message ?? '';
 
 				if(isOk) {
+					let comments = res.html ?? '';
+
+					$('.comment-cards').empty().append(comments);
 					$('.contact-form input, .contact-form textarea').val('');
 					target.prop('disabled', false);
 				}
