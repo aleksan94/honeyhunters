@@ -1,3 +1,7 @@
+.wrapper {
+	width: 100%;
+}
+
 .header, .footer {
 	background-color: #2d3136;
 }
@@ -30,6 +34,7 @@
 .contact-form {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	width: 100%;
 	color: white;
 	padding-top: 3em;
@@ -155,8 +160,9 @@
 
 .comment-card-body {
 	background-color: #deebde;
-	min-height: 12em;
+	min-height: 16em;
 	padding: 0 .5em;
+	word-break: break-word;
 }
 
 .comment-card:nth-child(odd) .comment-card-body {
@@ -198,4 +204,63 @@
 
 .footer .social img {
 	width: 4em;
+}
+
+@media screen and (max-width: 992px) {
+	.contact-icon-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+
+	.header .contact-icon {
+		width: 50%;
+	}
+
+	.contact-icon-wrapper .contact-icon {
+		margin-left: 0;
+	}
+
+	.contact-form > div:nth-child(1),
+	.contact-form > div:nth-child(2) {
+		width: 100%;
+	}
+
+	.contact-form .form-group {
+		padding-top: 3em;
+	}
+
+	.contact-button {
+		text-align: center;
+	}
+
+	.contact-button button {
+		width: 100%;
+		padding: 1em;
+	}
+
+	.comment-card {
+		width: 45%;
+	}
+
+	.comment-card:not(:nth-child(3n)) {
+		margin-right: 0;
+	}
+
+	.comment-card:not(:nth-child(2n)) {
+		margin-right: 10%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.comment-card {
+		width: 100%;
+	}
+
+	.comment-card:not(:nth-child(3n)) {
+		margin-right: 0;
+	}
+
+	.comment-card:not(:nth-child(2n)) {
+		margin-right: 0;
+	}
 }
