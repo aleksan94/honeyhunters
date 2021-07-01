@@ -58,8 +58,8 @@
 					</div>
 				</div>
 				<div class="social">
-					<img src="<?=$this->GetFolder().'/assets/img/vk.png'?>" alt="">
-					<img src="<?=$this->GetFolder().'/assets/img/facebook.png'?>" alt="">
+					<a href="https://vk.com" target="_blank"><img src="<?=$this->GetFolder().'/assets/img/vk.png'?>" alt=""></a>
+					<a href="https://facebook.com" target="_blank"><img src="<?=$this->GetFolder().'/assets/img/facebook.png'?>" alt=""></a>
 				</div>
 			</div>
 		</div>
